@@ -1,0 +1,13 @@
+@import url('main.css');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap');
+
+:root {
+    --gradientColor1: #3494E6;
+    --gradientColor2: #EC6EAD;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--gradientColor1), var(--gradientColor2));
+    color: white;
+    font-family: 'Karla';
+}
