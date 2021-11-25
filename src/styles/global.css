@@ -10,12 +10,4 @@ body {
     background-image: linear-gradient(to right, var(--gradientColor1), var(--gradientColor2));
     color: white;
     font-family: 'Karla';
-    background-size: 300%;
-    background-position: left;
-    animation: bg-animation 5s infinite;
-}
-@keyframes bg-animation {
-    0% {background-position: left}
-    50% {background-position: right}
-    100% {background-position: left}
 }

@@ -1,11 +1,11 @@
 import * as React from "react"
-import Main from "../../components/Main"
+import Links from "../../components/Links"
 import '../styles/global.css'
 
 const IndexPage = () => {
   return (
     <main>
-      <Main />
+      <Links />
     </main>
   )
 }
