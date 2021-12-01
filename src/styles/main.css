@@ -46,7 +46,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border-radius: 0.75rem;
+    border-radius: 6px;
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0.75);
     border-style: solid;
@@ -73,7 +73,7 @@
 .linkTitle {
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    color: #fff;
     margin-top: 1px;
     margin-bottom: 1px;
     align-content: center;
@@ -81,7 +81,7 @@
 
 
 .linkDesc {
-    color: white;
+    color: #fff;
     font-weight: 400;
     font-size: 16px;
     margin-top: 1px;
@@ -95,7 +95,7 @@
 }
 
 .socials a {
-    color: white;
+    color: #fff;
     font-size: 1.5rem;
     margin: 0.5rem;
     font-size: 20px;

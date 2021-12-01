@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import myimg from '../src/images/icon.png'
+import myimg from '../src/images/userImg.png'
 import { links, name, description } from '../data'
 import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -28,15 +28,15 @@ export default function Links () {
                         </a>
                     ))}
                 </div>
-                <div className="socials">
+                { /* <div className="socials">
                     <a aria-label="social link" href="https://github.com"><FontAwesomeIcon icon={faGithub}/></a>
                     <a aria-label="social link" href="https://instagram.com"><FontAwesomeIcon icon={faInstagram}/></a>
                     <a aria-label="social link" href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin}/></a>
                     <a aria-label="social link" href="https://twitter.com"><FontAwesomeIcon icon={faTwitter}/></a>
-                </div>
+                    </div> */ }
             </div>
             <div className="footer">
-                <a href="#">
+                <a href="/">
                     <FontAwesomeIcon icon={faLink} className="icon"/>
                     EinLink
                 </a>
