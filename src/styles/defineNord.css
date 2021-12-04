@@ -1,0 +1,19 @@
+:root {
+    --bg: #ECEFF4;
+    --bgPrimary: #E5E9F0;
+    --bgSecondary: #D8DEE9;
+
+    --fgPrimary: #2E3440;
+    --fgSecondary: #3B4252;
+    
+    --frost1: #8FBCBB;
+    --frost2: #88C0D0;
+    --frost3: #81A1C1;
+    --frost4: #5E81AC;
+
+    --red: #BF616A;
+    --orange: #D08770;
+    --yellow: #EBCB8B;
+    --green: #A3BE8C;
+    --magenta: #B48EAD;
+}

@@ -1,0 +1,36 @@
+.footerContainer {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.madewith {
+    color: var(--fgPrimary);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.madewith a {
+    color: var(--frost2);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.madewith a:hover {
+    color: var(--yellow);
+}
+
+.footerElements a {
+    margin: 10px;
+}
+
+.faicon {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--fgPrimary);
+    transition-duration: 0.4s;
+}
+
+.faicon:hover {
+    color: var(--frost2);
+}

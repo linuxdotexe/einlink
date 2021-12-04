@@ -1,13 +1,17 @@
-@import url('main.css');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
-:root {
-    --gradientColor1: #FFCBA4;
-    --gradientColor2: #FF8976;
-}
+@import url('main.css');
+@import url('navbar.css');
+@import url('hero.css');
+@import url('features.css');
+@import url('callout.css');
+@import url('how.css');
+@import url('defineNord.css');
+@import url('footer.css');
 
 body {
-    background-image: linear-gradient(to right, var(--gradientColor1), var(--gradientColor2));
-    color: white;
-    font-family: 'Karla';
+    background-color: var(--bg);
+    font-family: 'Space Grotesk', sans-serif;
+    width: 60%;
+    margin: auto;
 }

@@ -1,0 +1,40 @@
+.heroCallout {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.secBtns {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.forkBtn, .formBtn {
+    font-size: 25px;
+    padding: 10px;
+    border: var(--frost4);
+    border-style: solid;
+    background-color: var(--frost4);
+    transition-duration: 0.4s;
+    margin-bottom: 20px;
+}
+
+.forkBtn a, .formBtn a {
+    text-decoration: none;
+    color: var(--bgPrimary);
+    font-weight: 500;
+}
+
+.formBtn:hover, .forkBtn:hover {
+    font-size: 25px;
+    padding: 10px;
+    border: var(--frost1);
+    border-style: solid;
+    background-color: var(--frost1);
+    transition-duration: 0.4s;
+}

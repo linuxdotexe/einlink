@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(236, 239, 244, 0.5);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    color: var(--fgPrimary);
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+
+.logo:hover {
+    color: var(--orange);
+}
+
+.elements {
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.elements li {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.elements li a {
+    color: var(--fgSecondary);
+    text-decoration: none;
+    transition-duration: 0.4s;
+    
+}
+
+.elements li a:hover {
+    color: var(--frost4);
+}
+
+.elements li a:hover {
+    color: var(--frost4);
+}
