@@ -14,7 +14,7 @@
     border-style: solid;
     background-color: var(--frost4);
     transition-duration: 0.4s;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .forkBtn a, .formBtn a {

@@ -22,7 +22,8 @@ function Features () {
                     </div>
                 ))}
                 <p className="featureDisclaimer">
-                    * - Indicates that the feature is available on request and not by default.
+                    * - Indicates that the feature is available on request and not by default. Visit
+                    <a href="/einlink"> this</a> link to see these features in action
                 </p>
             </div>
         </div>

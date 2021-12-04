@@ -1,28 +1,28 @@
-export const name = 'Example Name';
+export const name = 'Features of EinLink';
 
-export const description =  'Subtitle / Tagline / Description';
+export const description =  'You can add a description';
 
 export const links = [
     {
-      title: "Title",
+      title: "A link",
       description:
-        "Optional description",
+        "to something important",
       link: "https://example.com",
     },
     {
-      title: "Title",
+      title: "Another link",
       description:
         "",
       link: "https://example.com",
     },
     {
-      title: "Title",
+      title: "Yet another link",
       description:
-        "Optional description",
+        "with description",
       link: "https://example.com",
     },
     {
-      title: "Title",
+      title: "Why not a fourth one",
       description:
         "",
       link: "https://example.com",

@@ -54,3 +54,8 @@
     color: var(--fgSecondary);
     font-size: 18px;
 }
+
+.featureDisclaimer a {
+    text-decoration: none;
+    color: var(--frost2);
+}

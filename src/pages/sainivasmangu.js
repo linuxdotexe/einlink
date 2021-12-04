@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import '../styles/link.css'
 import myimg from '../images/userImg.png'
 import { links, name, description, socials } from '../data/sainivasmangu'
 import { faBandcamp, faDiscord, faFacebook, faGithub, faInstagram, faLinkedin, faMedium, faPinterest, faReddit, faSnapchat, faTelegram, faTiktok, faTumblr, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";

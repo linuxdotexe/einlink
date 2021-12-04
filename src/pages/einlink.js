@@ -1,8 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import myimg from '../images/userImg.png'
-import { links, name, description, socials } from '../data/example_data'
+import '../styles/link.css'
+import myimg from '../images/logo.svg'
+import { links, name, description, socials } from '../data/einlink'
 import { faBandcamp, faDiscord, faFacebook, faGithub, faInstagram, faLinkedin, faMedium, faPinterest, faReddit, faSnapchat, faTelegram, faTiktok, faTumblr, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -128,6 +129,23 @@ function Links () {
                     { youtubeLink }
                 </div>
             </div>
+
+            
+            <p className="embedHeading">
+                You can embed anything!
+            </p>
+
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8IzjtXj8ThV?utm_source=generator"
+             className="embed"
+             width="60%" height="80" 
+             frameBorder="0" allowfullscreen="" 
+             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+            <p className="linkDisc">
+                These colors are for demo purposes and
+                will be changed upto your liking upon request.
+            </p>
+
             <div className="footer">
                 <a href="/">
                     <FontAwesomeIcon icon={faLink} className="icon"/>

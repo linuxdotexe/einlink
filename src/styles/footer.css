@@ -34,3 +34,7 @@
 .faicon:hover {
     color: var(--frost2);
 }
+
+.gatsbyMonogram {
+    width: 20px;
+}
