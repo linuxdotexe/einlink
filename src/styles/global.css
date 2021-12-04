@@ -15,3 +15,72 @@ body {
     width: 60%;
     margin: auto;
 }
+
+@media screen  and (max-width: 994px) {
+    body {
+        width: 95%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .elements li {
+        font-size: 16px;
+    }
+
+    .heroContainer {
+        margin-top: 0px;
+    }
+
+    .heroHeading {
+        font-size: 40px;
+    }
+
+    .heroSub {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .featuresListHeading {
+        font-size: 16px;
+    }
+
+    .featureListItem {
+        font-size: 16px;
+    }
+
+    .featureDisclaimer {
+        font-size: 14px;
+    }
+
+    .howDescription {
+        font-size: 16px;
+    }
+
+    .forkBtn, .formBtn {
+        font-size: 20px;
+    }
+
+    .madewith {
+        font-size: 16px;
+    }
+
+    .faicon {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 717px) {
+    .heroContainer {
+        margin-top: 60px;
+    }
+}
