@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "openlink",
+    siteUrl: "https://einlink.tech",
+    title: "EinLink",
   },
   plugins: [
     "gatsby-plugin-image",

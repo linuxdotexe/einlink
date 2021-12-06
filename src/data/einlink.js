@@ -2,6 +2,15 @@ export const name = 'Features of EinLink';
 
 export const description =  'You can add a description';
 
+export const priorityLink = [
+  {
+    title: "Priority Link",
+    description: 
+      "This is a priority link!",
+    link: "https://example.com",
+  }
+];
+
 export const links = [
     {
       title: "A link",

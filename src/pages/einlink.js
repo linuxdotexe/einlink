@@ -3,13 +3,36 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import '../styles/link.css'
 import myimg from '../images/logo.svg'
-import { links, name, description, socials } from '../data/einlink'
+import { links, name, description, priorityLink, socials } from '../data/einlink'
 import { faBandcamp, faDiscord, faFacebook, faGithub, faInstagram, faLinkedin, faMedium, faPinterest, faReddit, faSnapchat, faTelegram, faTiktok, faTumblr, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 import { config } from '@fortawesome/fontawesome-svg-core';
 
 function Links () {
+
+    let desc = ''
+    if (description !== "") {
+        desc = <h3 className="userDescription">{description}</h3>
+    }
     
+    let prioLink = ''
+    if (priorityLink !== '') {
+        prioLink = <div className="pLinkBox">
+        {priorityLink.map((link) => (
+            <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
+                <div className="pLinkBlock">
+                    <h1 className="pLinkTitle">
+                        {link.title}
+                    </h1>
+                    <p className="pLinkDesc">
+                        {link.description}
+                    </p>
+                </div>
+            </a>
+        ))}
+    </div>
+    }
+
     let githubLink = ''
     if (socials[0].github !== "") {
         githubLink = <a aria-label="github" href={socials[0].github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
@@ -95,7 +118,8 @@ function Links () {
             <img src={myimg} alt="user" className="userImg"/>
             <div className="container">
                 <h1 className="userName">{name}</h1>
-                <h3 className="userDescription">{description}</h3>
+                {desc}
+                {prioLink}
                 <div className="linkBox">
                     {links.map((link) => (
                         <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
