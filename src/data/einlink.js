@@ -11,6 +11,15 @@ export const priorityLink = [
   }
 ];
 
+export const accordianLink = [
+  {
+    title: "This is an accordian link",
+    description:
+      "You can add any number of accordian links",
+      link: "https://example.com",
+  }
+];
+
 export const links = [
     {
       title: "A link",

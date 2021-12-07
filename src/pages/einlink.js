@@ -1,9 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
+import '../styles/accordian.css';
 
 import '../styles/link.css'
 import myimg from '../images/logo.svg'
-import { links, name, description, priorityLink, socials } from '../data/einlink'
+import { links, name, description, priorityLink, accordianLink, socials } from '../data/einlink'
 import { faBandcamp, faDiscord, faFacebook, faGithub, faInstagram, faLinkedin, faMedium, faPinterest, faReddit, faSnapchat, faTelegram, faTiktok, faTumblr, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -16,7 +24,7 @@ function Links () {
     }
     
     let prioLink = ''
-    if (priorityLink !== '') {
+    if (priorityLink[0].link !== '' && priorityLink[0].title !== '') {
         prioLink = <div className="pLinkBox">
         {priorityLink.map((link) => (
             <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
@@ -31,6 +39,26 @@ function Links () {
             </a>
         ))}
     </div>
+    }
+
+    let accordLink = ''
+    if (accordianLink[0].title !== '' && accordianLink[0].description !== '' && accordianLink[0].link !== '') {
+        accordLink = <Accordion allowZeroExpanded>
+        {accordianLink.map((link) => (
+            <AccordionItem key={link.title}>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        {link.title}
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <a href={link.link} target="_blank" rel="noreferrer">
+                    {link.description}
+                    </a>
+                </AccordionItemPanel>
+            </AccordionItem>
+        ))}
+    </Accordion>
     }
 
     let githubLink = ''
@@ -120,6 +148,8 @@ function Links () {
                 <h1 className="userName">{name}</h1>
                 {desc}
                 {prioLink}
+                {accordLink}
+
                 <div className="linkBox">
                     {links.map((link) => (
                         <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
@@ -163,6 +193,7 @@ function Links () {
              className="embed"
              width="60%" height="80" 
              frameBorder="0" allowfullscreen="" 
+             title="embedded link"
              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
             <p className="linkDisc">
