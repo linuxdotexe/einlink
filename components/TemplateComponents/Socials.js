@@ -1,67 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
-} from 'react-accessible-accordion';
-import '../styles/accordian.css';
+import { socials } from '../../src/data/template'
 
-import '../styles/link.css'
-import myimg from '../images/logo.svg'
-import Embed from "../../components/Embed";
-import { links, name, description, priorityLink, accordianLink, socials } from '../data/einlink'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAmazonPay, faApplePay, faArtstation, faAtlassian, faAudible, faBandcamp, faBehance, faBitbucket, faBlogger, faCodepen, faDeezer, faDev, faDeviantart, faDiscord, faDribbble, faFacebook, faFlipboard, faGithub, faGooglePay, faGooglePlay, faHackerrank, faInstagram, faItunesNote, faJira, faJsfiddle, faLinkedin, faMailchimp, faMastodon, faMedium, faPatreon, faPaypal, faPinterest, faReddit, faSlack, faSnapchat, faSteam, faStripe, faTelegram, faTiktok, faTumblr, faTwitch, faTwitter, faUnsplash, faWhatsapp, faWikipediaW, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { config } from '@fortawesome/fontawesome-svg-core';
 
-function Links () {
 
-    let desc = ''
-    if (description !== "") {
-        desc = <h3 className="userDescription">{description}</h3>
-    }
-    
-    let prioLink = ''
-    if (priorityLink[0].link !== '' && priorityLink[0].title !== '') {
-        prioLink = <div className="pLinkBox">
-        {priorityLink.map((link) => (
-            <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
-                <div className="pLinkBlock">
-                    <h1 className="pLinkTitle">
-                        {link.title}
-                    </h1>
-                    <p className="pLinkDesc">
-                        {link.description}
-                    </p>
-                </div>
-            </a>
-        ))}
-    </div>
-    }
-
-    let accordLink = ''
-    if (accordianLink[0].title !== '' && accordianLink[0].description !== '' && accordianLink[0].link !== '') {
-        accordLink = <Accordion allowZeroExpanded>
-        {accordianLink.map((link) => (
-            <AccordionItem key={link.title}>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        {link.title}
-                    </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>
-                    <a href={link.link} target="_blank" rel="noreferrer">
-                    {link.description}
-                    </a>
-                </AccordionItemPanel>
-            </AccordionItem>
-        ))}
-    </Accordion>
-    }
-
+function Socials () {
     let applePayLink = ''
     if (socials[0].applePay !== "") {
         applePayLink = <a aria-label="apple pay" href={socials[0].applePay} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faApplePay}/></a>
@@ -298,29 +244,7 @@ function Links () {
     }
 
     return (
-        <body>
-            <img src={myimg} alt="user" className="userImg"/>
-            <div className="container">
-                <h1 className="userName">{name}</h1>
-                {desc}
-                {prioLink}
-                {accordLink}
-
-                <div className="linkBox">
-                    {links.map((link) => (
-                        <a key={'1'} target="_blank" rel="noreferrer" href={link.link}>
-                            <div className="linkBlock">
-                                <h1 className="linkTitle">
-                                    {link.title}
-                                </h1>
-                                <p className="linkDesc">
-                                    {link.description}
-                                </p>
-                            </div>
-                        </a>
-                    ))}
-                </div>
-                <div className="socials">
+        <div className="socials">
                     { amazonpayLink }
                     { applePayLink }
                     { artStationLink }
@@ -369,28 +293,7 @@ function Links () {
                     { wikipideaLink }
                     { youtubeLink }
                 </div>
-            </div>
-
-            
-            <p className="embedHeading">
-                You can embed anything!
-            </p>
-
-            <Embed />
-
-            <p className="linkDisc">
-                These colors are for demo purposes and
-                will be changed upto your liking upon request.
-            </p>
-
-            <div className="footer">
-                <a href="/">
-                    <FontAwesomeIcon icon={faLink} className="icon"/>
-                    EinLink
-                </a>
-            </div>
-        </body>
     )
 }
 
-export default Links;
+export default Socials;

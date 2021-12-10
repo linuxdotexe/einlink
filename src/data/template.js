@@ -1,4 +1,4 @@
-export const name = 'Features of EinLink';
+export const name = 'Title goes here';
 
 export const description =  'You can add a description';
 
@@ -97,4 +97,8 @@ export const socials = [
     twitter: "https://twitter.com",
     youtube: "https://youtube.com",
   }
-]
+];
+
+export const embedHeading = "You can embed anything!";
+
+export const footerDesc = "These colors are for demo purposes and will be changed upto your liking upon request.";

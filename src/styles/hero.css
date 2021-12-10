@@ -1,3 +1,7 @@
+body {
+    background-color: var(--bgNL);
+}
+
 .heroMain {
     margin-top: 25px;
 }
@@ -13,7 +17,7 @@
 .heroHeading {
     font-size: 60px;
     font-weight: 700;
-    color: var(--fgPrimary);
+    color: var(--fgPrimaryNL);
     background-image: -webkit-linear-gradient(92deg, var(--orange), var(--yellow));
 	background-clip: text;
     -webkit-background-clip: text;
@@ -36,7 +40,7 @@
 }
 
 .heroSub {
-    color: var(--fgSecondary);
+    color: var(--fgSecondaryNL);
     margin: 0 auto;
     text-align: center;
     font-size: 20px;

@@ -1,8 +1,14 @@
 import React from "react";
+import { embedHeading } from "../../src/data/template";
 
 export default function Embed () {
     return (
         <div>
+            
+            <p className="embedHeading">
+                {embedHeading}
+            </p>
+
             <iframe
             src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8IzjtXj8ThV"
             width="100%"

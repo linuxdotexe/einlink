@@ -2,6 +2,7 @@ import * as React from "react"
 
 import '../styles/global.css'
 
+import Meta from '../../components/Meta'
 import Navbar from "../../components/Navbar"
 import Hero from "../../components/Hero"
 import Callout from "../../components/Callout"
@@ -12,6 +13,7 @@ import Footer from "../../components/Footer"
 const IndexPage = () => {
   return (
     <main>
+      <Meta />
       <Navbar />
       <Hero />
       <Features />

@@ -19,7 +19,7 @@
 
 .forkBtn a, .formBtn a {
     text-decoration: none;
-    color: var(--bgPrimary);
+    color: var(--bgPrimaryNL);
     font-weight: 500;
 }
 

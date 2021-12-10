@@ -9,7 +9,7 @@
 @import url('footer.css');
 
 body {
-    background-color: var(--bg);
+    background-color: var(--bgNL);
     font-family: 'Space Grotesk', sans-serif;
     width: 60%;
     margin: auto;
