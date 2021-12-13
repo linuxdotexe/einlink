@@ -1,5 +1,6 @@
 .accordion {
     border: 2px solid rgba(46, 52, 64, 0.75);
+    text-align: center;
 }
 
 .accordion__item + .accordion__item {
@@ -11,7 +12,7 @@
     color: var(--fgPrimaryNL);
     cursor: pointer;
     padding: 18px;
-    text-align: left;
+    text-align: center;
     border: none;
 }
 
@@ -20,10 +21,11 @@
 }
 
 .accordion__button:before {
-    display: inline-block;
+    display: inline-flex;
+    float: left;
     content: '';
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     margin-right: 12px;
     border-bottom: 2px solid currentColor;
     border-right: 2px solid currentColor;
