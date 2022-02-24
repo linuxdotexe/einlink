@@ -1,112 +1,50 @@
 :root {
-
-    /*
+  /*
     ? Nord theme - Light
-    */
+  */
 
-    --bgNL: #ECEFF4;
-    --bgPrimaryNL: #E5E9F0;
-    --bgSecondaryNL: #D8DEE9;
+  --bgNL: #eceff4;
+  --bgPrimaryNL: #e5e9f0;
+  --bgSecondaryNL: #d8dee9;
 
-    --fgPrimaryNL: #2E3440;
-    --fgSecondaryNL: #3B4252;
-    
-    --frost1: #8FBCBB;
-    --frost2: #88C0D0;
-    --frost3: #81A1C1;
-    --frost4: #5E81AC;
+  --fgPrimaryNL: #2e3440;
+  --fgSecondaryNL: #3b4252;
 
-    --red: #BF616A;
-    --orange: #D08770;
-    --yellow: #EBCB8B;
-    --green: #A3BE8C;
-    --magenta: #B48EAD;
+  --frost1: #8fbcbb;
+  --frost2: #88c0d0;
+  --frost3: #81a1c1;
+  --frost4: #5e81ac;
 
-    --plbBorderNL: #5e81acbf;
-    --plbBackgroundNL: #5e81ac1a;
-    --plbBackgroundHoverNL: #5e81ac40;
+  --red: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --magenta: #b48ead;
 
-    --lbBorderNL: rgba(46, 52, 64, 0.75);
-    --lbBackgroundNL: rgba(46, 52, 64, 0.1);
-    --lbBackgroundHoverNL: rgba(46, 52, 64, 0.25);
+  --plbBorderNL: #5e81acbf;
+  --plbBackgroundNL: #5e81ac1a;
+  --plbBackgroundHoverNL: #5e81ac40;
 
-    /*
+  --lbBorderNL: rgba(46, 52, 64, 0.75);
+  --lbBackgroundNL: rgba(46, 52, 64, 0.1);
+  --lbBackgroundHoverNL: rgba(46, 52, 64, 0.25);
+
+  /*
     ? Nord theme - Dark
     */
 
-    --bgND: #2E3440;
-    --bgPrimaryND: #3B4252;
-    --bgSecondaryND: #434C5E;
+  --bgND: #2e3440;
+  --bgPrimaryND: #3b4252;
+  --bgSecondaryND: #434c5e;
 
-    --fgPrimaryND: #ECEFF4;
-    --fgSecondaryND: #E5E9F0;
+  --fgPrimaryND: #eceff4;
+  --fgSecondaryND: #e5e9f0;
 
-    --plbBorderND: #5e81acbf;
-    --plbBackgroundND: #5e81ac1a;
-    --plbBackgroundHoverND: #5e81ac40;
+  --plbBorderND: #5e81acbf;
+  --plbBackgroundND: #5e81ac1a;
+  --plbBackgroundHoverND: #5e81ac40;
 
-    --lbBorderND: rgba(46, 52, 64, 0.75);
-    --lbBackgroundND: rgba(46, 52, 64, 0.1);
-    --lbBackgroundHoverND: rgba(46, 52, 64, 0.25);
-
-
-    /*
-
-    All the below colorschemes are made with
-    reference from below website because I'm
-    I'm new to design and might make weird 
-    color choices.
-    
-    https://visme.co/blog/website-color-schemes/
-    
-    */
-
-    /*
-    ? "Cool and Fresh"
-    */
-
-    --bgCF: #5CDB65;
-    --fgCF: #05386b;
-    --bgSecondaryCF: #379683;
-    --fgSecondaryCF: #edf5e1;
-
-    /*
-    ? "Vermillion and Russian Green"
-    */
-
-    --bgVRG: #111;
-    --fgVRG: #fff;
-    --fgSecondaryVRG: #907163;
-    --greenVRG: #ad8174;
-    --redVRG: #a33327;
-
-    /*
-    ? "Deep Purples and Blues"
-    */
-
-    --bgDPB: #000;
-    --bgSecondaryDPB: #282828;
-    --fgPrimaryDPB: #3500d3;
-    --fgSecondaryDPB: #240090;
-    --fgTeritiaryDPB: #190061;
-
-    /*
-    ? "Contemporary and Bold"
-    */
-
-    --bgCB: #1a1a1d;
-    --fgPrimaryCB: #fff;
-    --fgSecondaryCB: #4e4e50;
-    --fgAccentCB: #c3073f;
-    --fgAccentSecondaryCB: #950740;
-
-    /*
-    ? "Corporate and Traditional"
-    */
-
-    --bgCT: #88bdbc;
-    --bgSecondaryCT: #254e58;
-    --fgPrimaryCT: #fff;
-    --fgSecondaryCT: #112d32;
-    --accentCT: #4f4a41;
+  --lbBorderND: rgba(46, 52, 64, 0.75);
+  --lbBackgroundND: rgba(46, 52, 64, 0.1);
+  --lbBackgroundHoverND: rgba(46, 52, 64, 0.25);
 }
